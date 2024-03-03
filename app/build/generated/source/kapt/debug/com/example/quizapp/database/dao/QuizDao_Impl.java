@@ -88,11 +88,11 @@ public final class QuizDao_Impl implements QuizDao {
   }
 
   @Override
-  public void insertAll(final List<? extends Score> dashBoardResponseDb) {
+  public void insertAll(final List<? extends Score> score) {
     __db.assertNotSuspendingTransaction();
     __db.beginTransaction();
     try {
-      __insertionAdapterOfScore.insert(dashBoardResponseDb);
+      __insertionAdapterOfScore.insert(score);
       __db.setTransactionSuccessful();
     } finally {
       __db.endTransaction();
@@ -100,11 +100,11 @@ public final class QuizDao_Impl implements QuizDao {
   }
 
   @Override
-  public long insert(final Score dashBoardResponseDb) {
+  public long insert(final Score score) {
     __db.assertNotSuspendingTransaction();
     __db.beginTransaction();
     try {
-      final long _result = __insertionAdapterOfScore.insertAndReturnId(dashBoardResponseDb);
+      final long _result = __insertionAdapterOfScore.insertAndReturnId(score);
       __db.setTransactionSuccessful();
       return _result;
     } finally {
@@ -113,12 +113,12 @@ public final class QuizDao_Impl implements QuizDao {
   }
 
   @Override
-  public int delete(final Score dashBoardResponseDb) {
+  public int delete(final Score score) {
     __db.assertNotSuspendingTransaction();
     int _total = 0;
     __db.beginTransaction();
     try {
-      _total += __deletionAdapterOfScore.handle(dashBoardResponseDb);
+      _total += __deletionAdapterOfScore.handle(score);
       __db.setTransactionSuccessful();
       return _total;
     } finally {
@@ -127,12 +127,12 @@ public final class QuizDao_Impl implements QuizDao {
   }
 
   @Override
-  public int update(final Score dashBoardResponseDb) {
+  public int update(final Score score) {
     __db.assertNotSuspendingTransaction();
     int _total = 0;
     __db.beginTransaction();
     try {
-      _total += __updateAdapterOfScore.handle(dashBoardResponseDb);
+      _total += __updateAdapterOfScore.handle(score);
       __db.setTransactionSuccessful();
       return _total;
     } finally {

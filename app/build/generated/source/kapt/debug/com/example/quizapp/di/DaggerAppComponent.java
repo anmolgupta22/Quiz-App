@@ -82,7 +82,7 @@ public final class DaggerAppComponent {
 
     private Provider<DBHelper> providesDatabaseProvider;
 
-    private Provider<QuizDao> providesLocationDaoProvider;
+    private Provider<QuizDao> providesQuizDaoProvider;
 
     private AppComponentImpl(ApiModule apiModuleParam, RepositoryModule repositoryModuleParam,
         DatabaseModule databaseModuleParam) {
@@ -101,11 +101,11 @@ public final class DaggerAppComponent {
     }
 
     private QuizRepository quizRepository() {
-      return RepositoryModule_ProvideStarWarsRepositoryFactory.provideStarWarsRepository(repositoryModule, apiService());
+      return RepositoryModule_ProvideQuizRepositoryFactory.provideQuizRepository(repositoryModule, apiService());
     }
 
     private RoomRepository roomRepository() {
-      return new RoomRepository(providesLocationDaoProvider.get());
+      return new RoomRepository(providesQuizDaoProvider.get());
     }
 
     private QuizViewModel quizViewModel() {
@@ -121,7 +121,7 @@ public final class DaggerAppComponent {
         final RepositoryModule repositoryModuleParam, final DatabaseModule databaseModuleParam) {
       this.provideApplicationProvider = DoubleCheck.provider(ApiModule_ProvideApplicationFactory.create(apiModuleParam));
       this.providesDatabaseProvider = DoubleCheck.provider(DatabaseModule_ProvidesDatabaseFactory.create(databaseModuleParam, provideApplicationProvider));
-      this.providesLocationDaoProvider = DoubleCheck.provider(DatabaseModule_ProvidesLocationDaoFactory.create(databaseModuleParam, providesDatabaseProvider));
+      this.providesQuizDaoProvider = DoubleCheck.provider(DatabaseModule_ProvidesQuizDaoFactory.create(databaseModuleParam, providesDatabaseProvider));
     }
 
     @Override
