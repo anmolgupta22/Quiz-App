@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#004643"
+    tools:context=".ui.StudentDetailsFragment">
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/circular_background"
+        android:gravity="center"
+        android:text="QUIZ APP"
+        android:textColor="@color/black"
+        android:textSize="29sp"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/logo"
+        android:layout_centerVertical="true"
+        android:text="Enter your name"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_til"
+        android:layout_below="@id/text_name"
+        android:paddingStart="15sp"
+        android:paddingEnd="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        style="@style/CustomOutlinedBox"
+        android:hint="Name">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="@color/white"
+        />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/text_reg_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enter your registration number"
+        android:padding="10dp"
+        android:layout_below="@id/name_til"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_field_til"
+        android:layout_below="@id/text_reg_number"
+        android:paddingStart="15sp"
+        android:paddingEnd="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        style="@style/CustomOutlinedBox"
+        android:hint="Registration number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/text_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/register_field_til"
+        android:layout_centerVertical="true"
+        android:text="Enter your grade"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/grade_field_til"
+        android:layout_below="@id/text_grade"
+        android:paddingStart="15sp"
+        android:paddingEnd="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        style="@style/CustomOutlinedBox"
+        android:hint="Grade">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/grade"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Start"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_outline_bg"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/grade_field_til"/>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\gupta\\.gradle\\daemon\\7.3.3\\com.example.quizapp-mergeDebugResources-52:\\layout\\option_item.xml",
+        "source": "C:\\Users\\gupta\\.gradle\\daemon\\7.3.3\\com.example.quizapp-main-55:\\layout\\option_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\gupta\\.gradle\\daemon\\7.3.3\\com.example.quizapp-mergeDebugResources-52:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\gupta\\.gradle\\daemon\\7.3.3\\com.example.quizapp-main-55:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\gupta\\.gradle\\daemon\\7.3.3\\com.example.quizapp-mergeDebugResources-52:\\layout\\fragment_student_details.xml",
+        "source": "C:\\Users\\gupta\\.gradle\\daemon\\7.3.3\\com.example.quizapp-main-55:\\layout\\fragment_student_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\gupta\\.gradle\\daemon\\7.3.3\\com.example.quizapp-mergeDebugResources-52:\\layout\\fragment_select_categories.xml",
+        "source": "C:\\Users\\gupta\\.gradle\\daemon\\7.3.3\\com.example.quizapp-main-55:\\layout\\fragment_select_categories.xml"
+    },
+    {
+        "merged": "C:\\Users\\gupta\\.gradle\\daemon\\7.3.3\\com.example.quizapp-mergeDebugResources-52:\\layout\\drop_down_item.xml",
+        "source": "C:\\Users\\gupta\\.gradle\\daemon\\7.3.3\\com.example.quizapp-main-55:\\layout\\drop_down_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\gupta\\.gradle\\daemon\\7.3.3\\com.example.quizapp-mergeDebugResources-52:\\layout\\activity_splash_screen.xml",
+        "source": "C:\\Users\\gupta\\.gradle\\daemon\\7.3.3\\com.example.quizapp-main-55:\\layout\\activity_splash_screen.xml"
+    },
+    {
+        "merged": "com.example.quizapp-mergeDebugResources-52:/layout/fragment_quiz.xml",
+        "source": "com.example.quizapp-main-55:/layout/fragment_quiz.xml"
+    },
+    {
+        "merged": "com.example.quizapp-mergeDebugResources-52:/layout/fragment_select_categories.xml",
+        "source": "com.example.quizapp-main-55:/layout/fragment_select_categories.xml"
+    },
+    {
+        "merged": "C:\\Users\\gupta\\.gradle\\daemon\\7.3.3\\com.example.quizapp-mergeDebugResources-52:\\layout\\fragment_quiz.xml",
+        "source": "C:\\Users\\gupta\\.gradle\\daemon\\7.3.3\\com.example.quizapp-main-55:\\layout\\fragment_quiz.xml"
+    }
+]
